@@ -67,10 +67,10 @@ phone.setup(function() {
       var message = "If you see this, it's broken... sorry...";
 
       if (count == 0) {
-        message = "We coulnd't find anything...";
+        message = "We couldn't find anything...";
       } else {
         var randomIndex = parseInt(Math.random() * count);
-        message = assembleMessage(data.businesses[randomIndex]))
+        message = assembleMessage(data.businesses[randomIndex]);
       }
       
       phone.sendSms(reqParams.From, message, null, function(sms) {
